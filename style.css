@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f76ae5; /* Choose your desired background color */
+}
+
+h1 {
+    color: red; /* Set the text color to red */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f2ee7c; /* Set the background color for the boxes */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add 3D box-shadow effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically and horizontally */
+}
+
+.cell:hover {
+    transform: translate(2px, 2px); /* Apply a slight translation on hover for 3D effect */
+}
+
+button {
+    margin-top: 20px; /* Adjust top margin as needed */
+    padding: 10px 20px;
+    background-color: #f44336; /* Choose a button background color */
+    color: #fff; /* Set button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Add 3D box-shadow effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+button:hover {
+    transform: translate(2px, 2px); /* Apply a slight translation on hover for 3D effect */
+}
